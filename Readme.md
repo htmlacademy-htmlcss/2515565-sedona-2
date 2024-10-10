@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Гостюхин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2515565).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
 
 ---
 
