@@ -8,9 +8,9 @@
 
   <body>
 
-    <header class="index-header">
+    <header class="index-header" data-test="header">
       <nav class="navigation">
-        <img class="navigation-logo" src="#" alt="Логотип Седона">
+        <img class="navigation-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -49,13 +49,14 @@
       </nav>
     </header>
 
-    <main class="index-main">
-      <section class="hero">
+    <main class="index-main" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Седона. Городок в Аризоне</h1>
-        <img src="#" alt="welcome to the gorgeous. Sedona. Because the Grand Canyon sucks">
+        <img src="images/svg/welcome.svg" width="458" height="352"
+          alt="welcome to the gorgeous. Sedona. Because the Grand Canyon sucks">
       </section>
 
-      <section class="reasons">
+      <section class="reasons" data-test="advantages">
         <h2 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <h3 class="reasons-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
         <ul class="reasons-list">
@@ -64,7 +65,7 @@
             <p class="reasons-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="reasons-item">
-            <img src="#" alt="Здание на фоне гор">
+            <img src="images/photo-1.jpg" alt="Здание на фоне гор" width="800" height="385">
           </li>
           <li class="reasons-item">
             <h3 class="reasons-item-title">Небольшая площадь</h3>
@@ -79,7 +80,7 @@
             <p class="reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="reasons-item">
-            <img src="#" alt="Гранд Каньон">
+            <img src="images/photo-2.jpg" alt="Гранд Каньон" width="800" height="385">
           </li>
           <li class="reasons-item">
             <h3 class="reasons-item-title">Там есть мост дьявола</h3>
@@ -107,14 +108,14 @@
         </ul>
       </section>
 
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <h3 class="search-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне</h3>
         <a class="search-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <h3 class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</h3>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -130,7 +131,7 @@
       </section>
     </main>
 
-    <footer class="index-footer">
+    <footer class="index-footer" data-test="footer">
       <section class="footer-social">
         <ul class="social-list">
           <li class="social-item">
@@ -156,7 +157,8 @@
       </section>
 
 
-      <img class="footer-logo" src="#" alt="Логотип HTML Академии">
+      <img class="footer-logo" src="images/svg/HTML-Academy.svg" alt="Логотип HTML Академии" width="114.9"
+        height="32.9">
     </footer>
 
   </body>

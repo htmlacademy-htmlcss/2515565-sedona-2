@@ -9,9 +9,9 @@
 
   <body>
 
-    <header class="index-header">
+    <header class="index-header" data-test="header">
       <nav class="navigation">
-        <img class="navigation-logo" src="#" alt="Логотип Седона">
+        <img class="navigation-logo" src="images/svg/logo.svg" alt="Логотип Седона" width="140" height="70">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -50,7 +50,7 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <header class="header-inner">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -64,7 +64,7 @@
           </li>
         </ul>
 
-        <section class="filter">
+        <section class="filter" data-test=" filter">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -130,7 +130,7 @@
         </section>
       </header>
 
-      <section class="catalog-products">
+      <section class="catalog-products" data-test="catalog">
         <h2 class="product-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
@@ -150,7 +150,8 @@
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/hotel-1.jpg" alt="Звездное небо в горах" width="300"
+                height="212">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="category-card">Гостиница</span>
@@ -164,7 +165,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/hotel-2.jpg" alt="Радуга в горах" width="300" height="212">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="category-card">Гостиница</span>
@@ -178,7 +179,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/hotel-3.jpg" alt="Горы" width="300" height="212">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <span class="category-card">Гостиница</span>
@@ -192,7 +193,8 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/hotel-4.jpg" alt="Ночное звездное небо" width="300"
+                height="212">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <span class="category-card">Гостиница</span>
@@ -225,7 +227,7 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <h3 class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</h3>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -241,7 +243,7 @@
       </section>
     </main>
 
-    <footer class="index-footer">
+    <footer class="index-footer" data-test="footer">
       <section class="footer-social">
         <ul class="social-list">
           <li class="social-item">
@@ -267,7 +269,8 @@
       </section>
 
 
-      <img class="footer-logo" src="#" alt="Логотип HTML Академии">
+      <img class="footer-logo" src="images/svg/HTML-Academy.svg" alt="Логотип HTML Академии" width="114.9"
+        height="32.9">
     </footer>
 
   </body>
