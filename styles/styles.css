@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #F2F2F2;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hero {
+  background-image: url("../images/index-background-bottom.svg"), url("../images/index-background.jpg");
+  background-color: #82B3D3;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  background-size: 100% auto, cover;
+}
+
+.navigation-user-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.social-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+}
+
+.button {
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.reasons-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.reasons-item-dark {
+  background-color: #82B3D3;
+}
+
+.reasons-item-light {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.reasons-item-light .reasons-item-description {
+  color: #333333;
+}
+
+.reasons-item-medium {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.reasons-item-medium .reasons-item-description {
+  color: #333333;
+}
+
+
+.reasons-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.reasons-list {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.reasons-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.reasons-item-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.reasons-list-bottom .reasons-item-title {
+  color: #000000;
+}
+
+.reasons-list-bottom .reasons-item-description {
+  color: #333333;
+}
+
+.reasons-item span {
+  color: #000000;
+}
+
+.search-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.search-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.search-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe {
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe {
+  background-color: #82B3D3;
+  text-align: center;
+}
+
+.subscribe-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.subscribe-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.subscribe-button {
+  background-color: #82B3D3;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.subscribe-field {
+  font-family: "PT Sans", sans-serif;
+}
+
+.link-phone {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-logo-link {
+  text-decoration: none;
+}
+
+.footer-logo-link span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+
+.header-inner {
+  background-color: #82B3D3;
+  background-image: url("../images/header-inner-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.breadcrumbs-link span {
+  color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.control {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.control-input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  background: transparent;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.catalog-button-active {
+  background-color: #82B3D3;
+}
+
+.product-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.product-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.category-card,
+.product-card-price {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.product-card-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.rating {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.product-card {
+  background-color: #E6E6E6;
+}
+
+.pagination-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-link-active {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.subscribe {
+  text-align: center;
+}
+
+.subscribe-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+}

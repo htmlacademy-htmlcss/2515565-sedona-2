@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -14,7 +15,7 @@
         <img class="navigation-logo" src="images/svg/logo.svg" alt="Логотип Седона" width="140" height="70">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link" href="index.html">
               Главная
             </a>
           </li>
@@ -114,17 +115,17 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control visually-hidden" for="minimum"> От
-                    <input class="control-input" type="text" name="minimum" placeholder="0">
-                    <span>от</span>
+                    <input class="control-input" type="text" name="minimum" placeholder="от">
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control visually-hidden" for="maximum"> До
-                    <input class="control-input" type="text" name="maximum" placeholder="9000">
-                    <span>до</span>
+                    <input class="control-input" type="text" name="maximum" placeholder="до">
                   </label>
                 </li>
               </ul>
+              <button class="catalog-button catalog-button-active" type="submit">Применить</button>
+              <button class="catalog-button" type="reset">Сбросить</button>
             </fieldset>
           </form>
         </section>
@@ -133,9 +134,9 @@
       <section class="catalog-products" data-test="catalog">
         <h2 class="product-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
+          <option class="option" value="popular">Сначала популярное</option>
+          <option class="option" value="cheap">Сначала дешёвое</option>
+          <option class="option" value="expensive">Сначала дорогое</option>
         </select>
         <a href="#" class="button">
           <span class="visually-hidden">Показать карточки</span>
@@ -156,12 +157,12 @@
             </a>
             <span class="category-card">Гостиница</span>
             <b class="product-card-price">От 4000 ₽</b>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <button class="product-card-button button" type="button">В избранное</button>
             <div class="card-rating">
               <span class="visually-hidden">Отель 4 звезды</span>
             </div>
-            <span>Рейтинг: 8,5</span>
+            <span class="rating">Рейтинг: 8,5</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -170,12 +171,12 @@
             </a>
             <span class="category-card">Гостиница</span>
             <b class="product-card-price">От 5000 ₽</b>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <button class="product-card-button button" type="button">В избранное</button>
             <div class="card-rating">
               <span class="visually-hidden">Отель 4 звезды</span>
             </div>
-            <span>Рейтинг: 9,2</span>
+            <span class="rating">Рейтинг: 9,2</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -184,12 +185,12 @@
             </a>
             <span class="category-card">Гостиница</span>
             <b class="product-card-price">От 2500 ₽</b>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <button class="product-card-button button" type="button">В избранное</button>
             <div class="card-rating">
               <span class="visually-hidden">Отель 3 звезды</span>
             </div>
-            <span>Рейтинг: 6,9</span>
+            <span class="rating">Рейтинг: 6,9</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -199,18 +200,18 @@
             </a>
             <span class="category-card">Гостиница</span>
             <b class="product-card-price">От 1500 ₽</b>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <button class="product-card-button button" type="button">В избранное</button>
             <div class="card-rating">
               <span class="visually-hidden">Отель 2 звезды</span>
             </div>
-            <span>Рейтинг: 5,0</span>
+            <span class="rating">Рейтинг: 5,0</span>
           </li>
         </ul>
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
+            <a class="pagination-link pagination-link-active" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -269,8 +270,11 @@
       </section>
 
 
-      <img class="footer-logo" src="images/svg/HTML-Academy.svg" alt="Логотип HTML Академии" width="114.9"
-        height="32.9">
+      <a class="footer-logo-link" href="https://htmlacademy.ru/profile/id2515565">
+        <span class="visually-hidden">Главная страница сайта разработчика</span>
+        <img class="footer-logo" src="images/svg/HTML-Academy.svg" alt="Логотип HTML Академии" width="114.9"
+          height="32.9">
+      </a>
     </footer>
 
   </body>

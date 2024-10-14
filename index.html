@@ -4,13 +4,16 @@
   <head>
     <meta charset="utf-8">
     <title>Седона. Городок в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
 
     <header class="index-header" data-test="header">
       <nav class="navigation">
-        <img class="navigation-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
+        <a class="navigation-logo-link" href="#">
+          <img class="navigation-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -23,7 +26,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link" href="catalog.html">
               Гостиницы
             </a>
           </li>
@@ -41,7 +44,7 @@
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="button navigation-user-link" href="#">
               Хочу сюда
             </a>
           </li>
@@ -60,37 +63,37 @@
         <h2 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <h3 class="reasons-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
         <ul class="reasons-list">
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-dark">
             <h3 class="reasons-item-title">Настоящий городок</h3>
             <p class="reasons-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="reasons-item">
             <img src="images/photo-1.jpg" alt="Здание на фоне гор" width="800" height="385">
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-light">
             <h3 class="reasons-item-title">Небольшая площадь</h3>
             <p class="reasons-item-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-medium">
             <h3 class="reasons-item-title">Красивая дорога</h3>
             <p class="reasons-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-light">
             <h3 class="reasons-item-title">Мало туристов</h3>
             <p class="reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="reasons-item">
             <img src="images/photo-2.jpg" alt="Гранд Каньон" width="800" height="385">
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-dark">
             <h3 class="reasons-item-title">Там есть мост дьявола</h3>
             <p class="reasons-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
         <h2 class="reasons-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <h3 class="reasons-subtitle">Опытный персонал и качественное обслуживание!</h3>
-        <ul class="reasons-list">
-          <li class="reasons-item">
+        <ul class="reasons-list reasons-list-bottom">
+          <li class="reasons-item reasons-item-light">
             <span class="visually-hidden">Жилье</span>
             <h3 class="reasons-item-title">Жилье</h3>
             <p class="reasons-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -100,7 +103,7 @@
             <h3 class="reasons-item-title">Еда</h3>
             <p class="reasons-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-light">
             <span class="visually-hidden">Сувениры</span>
             <h3 class="reasons-item-title">Сувениры</h3>
             <p class="reasons-item-description">Не только китайского, но и настоящего местного производства!</p>
@@ -112,7 +115,7 @@
         <h2 class="search-title">Заинтересовались?</h2>
         <h3 class="search-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне</h3>
-        <a class="search-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="button search-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
       <section class="subscribe" data-test="subscribe">
@@ -157,8 +160,11 @@
       </section>
 
 
-      <img class="footer-logo" src="images/svg/HTML-Academy.svg" alt="Логотип HTML Академии" width="114.9"
-        height="32.9">
+      <a class="footer-logo-link" href="https://htmlacademy.ru/profile/id2515565">
+        <span class="visually-hidden">Главная страница сайта разработчика</span>
+        <img class="footer-logo" src="images/svg/HTML-Academy.svg" alt="Логотип HTML Академии" width="114.9"
+          height="32.9">
+      </a>
     </footer>
 
   </body>
