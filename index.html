@@ -246,7 +246,7 @@
       </footer>
       <div class="modal-container">
         <div class="modal modal-auth">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
             <span></span>
             <span></span>
@@ -256,10 +256,10 @@
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-form-container">
                 <fieldset class="auth-form-fieldset">
-                  <label class="arrival-date-label" for="arrival-date">Дата заезда:</label>
+                  <label class="arrival-date-label" for="arrival-date">Дата Заезда:</label>
                   <div class="input-calendar">
                     <input class="auth-form-field field" type="text" id="arrival-date" name="arrival-date"
-                      value="27 апреля 2020" required>
+                      value="27 апреля 2020" required placeholder="Укажите дату">
                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"
@@ -298,10 +298,10 @@
                   <span class="warning-message">Мы не можем отправить вас в прошлое.</span>
                 </fieldset>
                 <fieldset class="auth-form-fieldset">
-                  <label class="arrival-date-label" for="departure-date">Дата выезда:</label>
+                  <label class="arrival-date-label" for="departure-date">Дата Выезда:</label>
                   <div class="input-calendar">
                     <input class="auth-form-field field" type="text" id="departure-date" name="arrival-date"
-                      value="1 сентября 2023" required>
+                      value="1 сентября 2023" required placeholder="Укажите дату">
                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"
@@ -340,49 +340,58 @@
                   <span class="message">На эти даты есть свободные номера. Пока есть.</span>
                 </fieldset>
                 <fieldset class="auth-form-fieldset">
-                  <label class="adults-counter-label" for="adults-counter">Взрослые:</label>
-                  <button class="counter-button counter-button-minus" type="button">
-                    <span class="visually-hidden">Минус</span>
-                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
-                    </svg>
-                  </button>
-                  <input class="form-field-counter field" type="number" id="adults-counter" name="adults-counter"
-                    min="0" value="2">
-                  <button class="counter-button counter-button-plus" type="button">
-                    <span class="visually-hidden">Плюс</span>
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
-                    </svg>
-                  </button>
-                  <label class="childes-counter-label" for="childes-counter">Дети:
-                  </label>
-                  <span class="tooltip">
-                    <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date">
-                      <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
-                      </svg>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
-                      будут с вами, возраст
-                      которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  <div class="adults-container">
+                    <label class="adults-counter-label" for="adults-counter">Взрослые:</label>
+                    <div class="counter-container">
+                      <button class="counter-button counter-button-minus" type="button">
+                        <span class="visually-hidden">Минус</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
+                        </svg>
+                      </button>
+                      <input class="form-field-counter field" type="text" id="adults-counter" name="adults-counter"
+                        value="2">
+                      <button class="counter-button counter-button-plus" type="button">
+                        <span class="visually-hidden">Плюс</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="children-container">
+                    <label class="childes-counter-label" for="childes-counter">Дети:
+                    </label>
+                    <span class="tooltip">
+                      <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,
+                        которые
+                        будут с вами, возраст
+                        которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
                     </span>
-                  </span>
-                  <button class="counter-button counter-button-minus" type="button" id="children-minus">
-                    <span class="visually-hidden">Минус</span>
-                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
-                    </svg>
-                  </button>
-                  <input class="form-field-counter field" type="number" id="childes-counter" name="childes-counter"
-                    min="0" value="2">
-                  <button class="counter-button counter-button-plus" type="button" id="children-plus">
-                    <span class="visually-hidden">Плюс</span>
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
-                    </svg>
-                  </button>
+                    <div class="counter-container">
+                      <button class="counter-button counter-button-minus" type="button" id="children-minus">
+                        <span class="visually-hidden">Минус</span>
+                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                        </svg>
+                      </button>
+                      <input class="form-field-counter field" type="text" id="childes-counter" name="childes-counter"
+                        value="2">
+                      <button class="counter-button counter-button-plus" type="button" id="children-plus">
+                        <span class="visually-hidden">Плюс</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
                 <button class="modal-button" type="submit">Найти</button>
               </div>

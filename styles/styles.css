@@ -704,8 +704,6 @@ html {
   font: inherit;
   height: 100%;
   padding: 14px 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   width: 452px;
   border: none;
   border-top-left-radius: 4px;
@@ -1567,8 +1565,10 @@ html {
   transition: all .2s ease-in;
 }
 
-.button-favorites {
+.product-card-button.button-favorites {
   background-color: rgba(125, 181, 79, 1);
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .button-favorites:hover {
@@ -1612,6 +1612,46 @@ html {
   text-transform: uppercase;
   display: inline-block;
   padding: 8px 22px;
+}
+
+.rating-star {
+  position: relative;
+}
+
+.rating-star-four::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  background-image: url('../images/svg/star.svg');
+  background-repeat: space no-repeat;
+  width: 90px;
+  height: 20px;
+}
+
+.rating-star-three::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  background-image: url('../images/svg/star.svg');
+  background-repeat: space no-repeat;
+  width: 70px;
+  height: 20px;
+}
+
+.rating-star-two::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  background-image: url('../images/svg/star.svg');
+  background-repeat: space no-repeat;
+  width: 40px;
+  height: 20px;
 }
 
 .pagination {
@@ -1865,7 +1905,7 @@ svg path {
 
 .warning-message {
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
   left: 157px;
   color: rgba(255, 87, 87, 1);
   font-family: 'PT Sans', sans-serif;
@@ -1876,7 +1916,7 @@ svg path {
 
 .message {
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
   left: 157px;
   color: rgba(51, 51, 51, 1);
   font-family: 'PT Sans', sans-serif;
@@ -1890,6 +1930,10 @@ svg path {
   top: 14px;
   right: 20px;
   cursor: pointer;
+}
+
+.auth-form-field::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-form-container {
@@ -1978,15 +2022,26 @@ svg path {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin-right: 10px;
+}
+
+.adults-counter-label {
+  margin-right: 46px;
 }
 
 .childes-counter-label {
   position: relative;
 }
 
+.adults-container {
+  display: flex;
+  align-items: center;
+}
+
 .tooltip {
   display: block;
   position: relative;
+  margin-right: 46px;
 }
 
 .tooltip-button {
@@ -2041,6 +2096,7 @@ svg path {
   box-sizing: border-box;
 }
 
+
 .tooltip-text::before {
   position: absolute;
   content: '';
@@ -2072,12 +2128,11 @@ svg path {
 
 .counter-button {
   width: 20px;
-  height: 20px;
+  height: auto;
   background: none;
   border: none;
   cursor: pointer;
-  background-color: rgba(242, 242, 242, 1);
-  padding: 14px 10px;
+  padding: 14px 20px;
   position: relative;
 }
 
@@ -2097,4 +2152,37 @@ svg path {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.counter-container {
+  display: flex;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 4px;
+}
+
+.children-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-field-counter {
+  border: none;
+  background: none;
+  -moz-appearance: textfield;
+  width: 31px;
+  font: inherit;
+  padding: 14px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-field-counter:focus {
+  outline: none;
+}
+
+.form-field-counter::-webkit-outer-spin-button,
+.form-field-counter::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
 }
