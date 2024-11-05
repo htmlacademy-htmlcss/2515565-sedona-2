@@ -288,7 +288,6 @@ html {
 .reasons-item {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,6 +320,7 @@ html {
 }
 
 .reasons-item-container {
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,10 +334,15 @@ html {
   padding: 0 85px;
 }
 
+.reasons-item-fix {
+  width: 400px;
+}
+
 .reasons-item-container-big {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -948,8 +953,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 70px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .catalog-filter-right-group {
@@ -957,8 +960,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 70px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .catalog-filter-group {
@@ -979,6 +980,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1029,8 +1032,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1504,12 +1505,36 @@ html {
   object-fit: contain;
 }
 
+.product-card-image:hover {
+  opacity: 0.8;
+}
+
+.product-card-image:focus {
+  outline: none;
+}
+
+.product-card-image:active {
+  opacity: 0.6;
+}
+
 .product-card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-align: left;
   margin: 0;
+}
+
+.product-card-title:hover {
+  opacity: 0.8;
+}
+
+.product-card-title:focus {
+  outline: none;
+}
+
+.product-card-title:active {
+  opacity: 0.6;
 }
 
 .category-price-container {
@@ -2134,6 +2159,18 @@ svg path {
   cursor: pointer;
   padding: 14px 20px;
   position: relative;
+}
+
+.counter-button:hover {
+  opacity: .5;
+}
+
+.counter-button:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.counter-button:active {
+  opacity: 0.2;
 }
 
 .counter-button svg {
