@@ -800,7 +800,7 @@ html {
   padding: 5px 0;
 }
 
-.footer-logo-link:hover svg path {
+.footer-logo-link:hover path {
   fill: rgba(117, 97, 87, 1);
 }
 
@@ -808,11 +808,11 @@ html {
   outline: none;
 }
 
-.footer-logo-link:focus svg path {
+.footer-logo-link:focus path {
   fill: rgba(117, 97, 87, 1);
 }
 
-.footer-logo-link:active svg path {
+.footer-logo-link:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -925,7 +925,7 @@ html {
   text-decoration: none;
 }
 
-.breadcrumbs-link:hover svg path {
+.breadcrumbs-link:hover path {
   fill: rgba(255, 255, 255, 0.6);
 }
 
@@ -933,7 +933,7 @@ html {
   outline: none;
 }
 
-.breadcrumbs-link:active svg path {
+.breadcrumbs-link:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -1776,7 +1776,7 @@ svg path {
   transition: all .2s ease-in;
 }
 
-.social-link:hover svg path {
+.social-link:hover path {
   fill: rgba(104, 162, 202, 1);
 }
 
@@ -1784,12 +1784,12 @@ svg path {
   outline: none;
 }
 
-.social-link:focus svg path {
+.social-link:focus path {
   fill: rgba(104, 162, 202, 1);
   outline: none;
 }
 
-.social-link:active svg path {
+.social-link:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
