@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/2/user/2515565).
-* Наставник: `Неизвестно`.
+* Студент: [Евгений Гостюхин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2515565).
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
+* Ссылка на проект: [Седона](https://gostyukhin.github.io/2515565-sedona-2/)
 
 ---
 
